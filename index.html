@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Générateur de mots de passe</title>
+</head>
+<body>
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pw">Votre mot de passe</span>
+                <button id="copy">Copié</button>
+            </div>
+        </div>
+    
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="lenght">Nombre de caractères</label>
+
+                <input type="number" id="len" value="12" min="8" max="24">
+            </div>
+
+            <div class="form-control">
+                <label for="upper">Contenir des lettres majuscules</label>
+
+                <input id="upper" type="checkbox">
+            </div>
+
+            <div class="form-control">
+                <label for="lower">Contenir des lettres minuscules</label>
+
+                <input id="lower" type="checkbox">
+            </div>
+
+            <div class="form-control">
+                <label for="number">Contenir des chiffres</label>
+
+                <input id="number" type="checkbox">
+            </div>
+
+            <div class="form-control">
+                <label for="symbol">Contenir des symboles</label>
+
+                <input id="symbol" type="checkbox">
+            </div>
+
+            <button id="generate" class="generate">Générer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
